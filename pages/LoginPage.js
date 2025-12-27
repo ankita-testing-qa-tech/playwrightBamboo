@@ -29,33 +29,3 @@ class LoginPage {
 }
 
 module.exports = LoginPage;
-
-
-// class LoginPage {
-//   constructor(page) {
-//     this.page = page;
-
-//     // BEST PRACTICE locators
-//     this.emailInput = page.getByLabel('Email');
-//     this.passwordInput = page.getByLabel('Password');
-//     this.loginButton = page.getByRole('button', { name: 'Log in' });
-//   }
-
-//   async open() {
-//     await this.page.goto('https://demowebshop.tricentis.com/login');
-//   }
-
-//   async login(email, password) {
-//     await this.open();
-
-//     await this.emailInput.fill(email);
-//     await this.passwordInput.fill(password);
-
-//     await Promise.all([
-//       this.page.waitForNavigation(),
-//       this.loginButton.click()
-//     ]);
-//   }
-// }
-
-// module.exports = LoginPage;

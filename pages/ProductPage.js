@@ -40,26 +40,3 @@ class ProductPage {
 }
 
 module.exports = ProductPage;
-
-
-// class ProductPage {
-//   constructor(page) {
-//     this.page = page;
-//   }
-
-//   async addProductToCart(productName) {
-//     const productCard = this.page
-//       .locator('.product-item')
-//       .filter({ hasText: productName });
-
-//     await productCard.scrollIntoViewIfNeeded();
-
-//     const addToCartButton = productCard.locator(
-//       'input.button-2.product-box-add-to-cart-button'
-//     );
-
-//     await addToCartButton.click();
-//   }
-// }
-
-// module.exports = ProductPage;

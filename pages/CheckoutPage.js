@@ -1,34 +1,21 @@
 class CheckoutPage {
   constructor(page) {
     this.page = page;
-
-    // Billing
+    
     this.billingContinue =
       '#billing-buttons-container input[value="Continue"]';
-
-    // Shipping
     this.shippingContinue =
       '#shipping-buttons-container input[value="Continue"]';
-
-    // Shipping Method
     this.shippingMethodContinue =
       '#shipping-method-buttons-container input[value="Continue"]';
-
-    // Payment Method (Cash on Delivery)
     this.paymentMethodRadio =
       'input[value="Payments.CashOnDelivery"]';
     this.paymentMethodContinue =
       '#payment-method-buttons-container input[value="Continue"]';
-
-    // Payment Info
     this.paymentInfoContinue =
       '#payment-info-buttons-container input[value="Continue"]';
-
-    // Confirm Order
     this.confirmOrderButton =
       '#confirm-order-buttons-container input[value="Confirm"]';
-
-    // Success message
     this.orderSuccessTitle = '.order-completed';
   }
 
