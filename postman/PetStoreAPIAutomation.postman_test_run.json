@@ -1,0 +1,96 @@
+{
+	"id": "ecb37e7b-5f8c-4fce-9fd8-3909cd7aa176",
+	"name": "PetStoreAPIAutomation",
+	"timestamp": "2025-12-27T18:55:28.153Z",
+	"collection_id": "40479565-069b23bd-863e-4a3b-92fb-838d278d407b",
+	"folder_id": 0,
+	"environment_id": "40479565-f2957683-d398-4999-9031-946280b0bad2",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-27T18:55:26.687Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c5cbcc8f-c063-4e0f-b285-1c4af6d98e4f",
+			"name": "POST API – Create Pet",
+			"url": "https://petstore.swagger.io/v2/pet",
+			"time": 266,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Pet ID is created": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pet ID is created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				266
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Pet ID is created": true
+				}
+			]
+		},
+		{
+			"id": "fa368298-69aa-4829-bfd3-2b744ef4745b",
+			"name": "GET API – Fetch Pet by ID",
+			"url": "https://petstore.swagger.io/v2/pet/9223372036854757881",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Correct pet data returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Correct pet data returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				253
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Correct pet data returned": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 519,
+	"collection": {
+		"requests": [
+			{
+				"id": "c5cbcc8f-c063-4e0f-b285-1c4af6d98e4f",
+				"method": "POST"
+			},
+			{
+				"id": "fa368298-69aa-4829-bfd3-2b744ef4745b",
+				"method": "GET"
+			}
+		]
+	}
+}
